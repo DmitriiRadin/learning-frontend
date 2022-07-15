@@ -288,3 +288,22 @@
         font-size: 105%;
     }
 }
+
+@layer tutorial-try {
+    .tutorial-try {
+        padding: 1.5rem;
+        border: #d5d5d5 solid 0.1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .tutorial-try > header {
+        border-bottom: 1px solid #d5d5d5;
+        margin: 0 -1.5rem 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .tutorial-try > header > h2 {
+        margin: 1rem 0;
+    }
+}
