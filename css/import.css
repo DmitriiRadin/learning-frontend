@@ -183,6 +183,11 @@
         width: 10%;
         float: left;
     }
+
+    .flex-row {
+        display: flex;
+        margin-bottom: 1rem;
+    }
 }
 
 @layer tutorial_layer {

@@ -17,10 +17,74 @@
     <link rel="stylesheet" href="css/import.css">
 
     <style>
+        @layer background-colors {
+            .background-colors .box {
+                background-color: #567895;
+            }
 
+            .background-colors :is(h2,h3) {
+                background-color: black;
+                color: white;
+            }
 
-        @layer styling-backgrounds-in-css {
+            .background-colors span {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
 
+        @layer background-images {
+
+            .background-images .box {
+                width: 100%;
+                height: 150px;
+                margin-right: 5%;
+                padding: 1rem;
+            }
+
+            .background-images .box:last-child {
+                margin-right: 0;
+            }
+
+            .background-images .balloon-background {
+                background: #77d9fd url('/images/icons8-party-balloon-80.png');
+            }
+
+            .background-images .star-background {
+                background: #e5a4ee url('/images/icons8-star-96.png');
+            }
+
+            .background-images :is(.star-background, .balloon-background) {
+                background-size: 40px;
+            }
+
+            .background-images .no-repeat {
+                background-repeat: no-repeat;
+            }
+
+            .background-images .repeat-x {
+                background-repeat: repeat-x;
+            }
+
+            .background-images .repeat-y {
+                background-repeat: repeat-y;
+            }
+
+            .background-images .contain {
+                background-size: contain;
+            }
+
+            .background-images .cover {
+                background-size: cover;
+            }
+
+            .background-images .gradient-background {
+                background: rgb(63, 94, 251);
+                background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(61, 159, 60, 0.5702442842371324) 23%, rgba(78, 152, 58, 1) 42%, rgba(56, 147, 213, 0.8251462450214461) 57%, rgba(165, 102, 170, 0.6262666932007177) 82%, rgba(252, 70, 107, 1) 100%);
+            }
+
+            .background-images .multiple-images-background {
+                background: url("images/icons8-star-96.png") 1rem 1rem / 7rem no-repeat, url("images/icons8-party-balloon-80.png") 3rem 4rem repeat-x, #e37cf1;
+            }
         }
 
     </style>
@@ -73,20 +137,84 @@
 
     <div class="tutorial-try">
         <header>
-            <h2>Styling backgrounds in CSS</h2>
+            <h2>Background colors</h2>
         </header>
-        <div class="styling-backgrounds-in-css">
-            <p>I am a paragraph. A short one.</p>
-
-            <ul>
-                <li>Item One</li>
-                <li>Item Two</li>
-                <li>Item Three</li>
-            </ul>
-            <p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.
-            </p>
+        <div class="background-colors">
+            <div class="box">
+                <h3>Background colors</h3>
+                <p>Try changing the background <span>colors</span>.</p>
+            </div>
         </div>
+    </div>
 
+    <div class="tutorial-try">
+        <header>
+            <h2>Background images</h2>
+        </header>
+        <div class="background-images">
+            <h3>Background images</h3>
+
+            <div class="flex-row">
+                <div class="box balloon-background"></div>
+                <div class="box star-background"></div>
+            </div>
+
+            <h3>Controlling background-repeat</h3>
+
+            <div class="flex-row">
+                <div class="box balloon-background no-repeat"><p>no-repeat</p></div>
+                <div class="box star-background repeat-x"><p>repeat x</p></div>
+                <div class="box star-background repeat-y"><p>repeat y</p></div>
+            </div>
+
+            <h3>Sizing the background image</h3>
+
+            <div class="flex-row">
+                <div class="box star-background cover no-repeat"><p>cover</p></div>
+                <div class="box balloon-background contain no-repeat"><p>contain</p></div>
+            </div>
+
+            <h3>Positioning the background image</h3>
+
+            <p>
+                The background-position property allows you to choose the position in which the background image appears
+                on the box it is applied to. This uses a coordinate system in which the top-left-hand corner of the box
+                is (0,0), and the box is positioned along the horizontal (x) and vertical (y) axes.
+            </p>
+
+            <div class="flex-row">
+                <div class="box star-background no-repeat"
+                     style="background-position: top right"
+                >
+                    <p>top right</p>
+                </div>
+                <div class="box balloon-background no-repeat"
+                     style="background-position: 20px 10%"
+                >
+                    <p>20px 10%</p>
+                </div>
+                <div class="box balloon-background no-repeat"
+                     style="background-position: right 50px;"
+                >
+                    <p>right 50px</p>
+                </div>
+            </div>
+
+            <h3>Gradient backgrounds</h3>
+
+            <div class="flex-row">
+                <div class="box gradient-background"><p>gradient-background</p></div>
+            </div>
+
+            <h3>Multiple background images</h3>
+
+            <div class="flex-row">
+                <div class="box multiple-images-background">
+                    <p>Multiple background images</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 </body>
