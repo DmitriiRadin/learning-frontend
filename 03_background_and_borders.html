@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backgrounds and borders - CSS Tutorials</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <link rel="stylesheet" href="css/import.css">
+
+    <style>
+
+        @layer tutorial-try {
+            .tutorial-try {
+                padding: 1.5rem;
+                border: #d5d5d5 solid 0.1rem;
+                border-radius: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .tutorial-try > header {
+                border-bottom: 1px solid #d5d5d5;
+                margin: 0 -1.5rem 2rem;
+                padding: 0 1.5rem;
+            }
+
+            .tutorial-try > header > h2 {
+                margin: 1rem 0;
+            }
+        }
+
+        @layer block-flex-display-types {
+            .block-flex-display-types p,
+            .block-flex-display-types ul {
+                border: 2px solid rebeccapurple;
+                padding: .5rem;
+            }
+
+            .block-flex-display-types .block,
+            .block-flex-display-types li {
+                border: 2px solid blue;
+                padding: .5rem;
+            }
+
+            .block-flex-display-types ul {
+                list-style: none;
+                display: flex;
+            }
+
+            .block-flex-display-types .block {
+                display: block;
+            }
+        }
+
+        @layer inline-flex-display-types {
+            .inline-flex-display-types p,
+            .inline-flex-display-types ul {
+                border: 2px solid rebeccapurple;
+            }
+
+            .inline-flex-display-types span,
+            .inline-flex-display-types li {
+                border: 2px solid blue;
+            }
+
+            .inline-flex-display-types ul {
+                list-style: none;
+                padding: 0;
+                display: inline-flex;
+            }
+
+            .inline-flex-display-types .inline {
+                display: inline;
+            }
+        }
+
+        @layer the-box-model-and-inline-boxes {
+            .the-box-model-and-inline-boxes span {
+                margin: 20px;
+                padding: 20px;
+                background: lightblue;
+                border: 2px solid lightblue;
+                border-radius: 20px;
+            }
+        }
+
+        @layer creating-menu-with-inline-blocks {
+            .creating-menu-with-inline-blocks ul {
+                background-color: #d5d5d5;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            .creating-menu-with-inline-blocks li {
+                display: inline-block;
+            }
+
+            .creating-menu-with-inline-blocks ul > li > a {
+                padding: .8rem;
+                background-color: #e37cf1;
+                display: inline-block;
+                margin-left: 1rem;
+                border-radius: 0.3rem;
+                text-decoration: none;
+            }
+
+            .creating-menu-with-inline-blocks ul > li:first-child > a {
+                margin-left: 0;
+            }
+
+            .creating-menu-with-inline-blocks ul > li > a:hover {
+                background-color: #436ebd;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="page_wrapper">
+    <header>
+        <nav>
+            <a class="home-button" href="index.html">Back to Home</a>
+        </nav>
+
+        <h1>
+            <a href="#">Backgrounds and borders</a>
+        </h1>
+
+        <p>
+            Everything in CSS has a box around it, and understanding these boxes is key to being able to create more
+            complex
+            layouts with CSS, or to align items with other items. In this lesson, we will take a look at the CSS Box
+            Model.
+            You'll get an understanding of how it works and the terminology that relates to it.
+        </p>
+
+        <table>
+            <tr>
+                <th>
+                    Prerequisites:
+                </th>
+                <td>
+                    Basic computer literacy,
+                    <a href="/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software">basic software
+                        installed</a>, basic knowledge of
+                    <a href="/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files">working with files</a>,
+                    HTML
+                    basics (study
+                    <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML">Introduction to HTML</a>), and an idea of how
+                    CSS
+                    works (study
+                    <a href="/en-US/docs/Learn/CSS/First_steps">CSS first steps</a>.)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Objective:
+                </th>
+                <td>
+                    To learn about the CSS Box Model, what makes up the box model and how to switch to the alternate
+                    model.
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <hr>
+
+    <div class="tutorial-try">
+        <header>
+            <h2>Block flex display types</h2>
+        </header>
+        <div class="block-flex-display-types">
+            <p>I am a paragraph. A short one.</p>
+
+            <ul>
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+            </ul>
+            <p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.
+            </p>
+        </div>
+
+    </div>
+    <div class="tutorial-try">
+        <header>
+            <h2>Inline flex display types</h2>
+        </header>
+        <div class="inline-flex-display-types">
+            <p>
+                I am a paragraph. Some of the
+                <span>words</span> have been wrapped in a
+                <span>span element</span>.
+            </p>
+            <ul>
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+            </ul>
+            <p class="inline">I am a paragraph. A short one.</p>
+            <p class="inline">I am another paragraph. Also a short one.</p>
+        </div>
+
+    </div>
+
+
+    <div class="tutorial-try">
+        <header>
+            <h2>The box model and inline boxes</h2>
+        </header>
+        <div class="the-box-model-and-inline-boxes">
+            <p>
+                I am a paragraph and this is a <span>span</span> inside that paragraph. A span is an inline element and
+                so does not respect width and height.
+            </p>
+        </div>
+    </div>
+
+    <div class="tutorial-try">
+        <header>
+            <h2>Creating menu with inline blocks</h2>
+        </header>
+        <div class="creating-menu-with-inline-blocks">
+            <ul class="links-list">
+                <li><a href="">Link one</a></li>
+                <li><a href="">Link two</a></li>
+                <li><a href="">Link three</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
