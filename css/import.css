@@ -5,7 +5,7 @@ html {
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
@@ -77,9 +77,6 @@ a {
     cursor: pointer;
 }
 
-.page_wrapper {
-}
-
 .page__inner {
     margin: 0;
     padding: 0 120px;
@@ -94,9 +91,6 @@ a {
     border-radius: 0.4em;
     border: 4px solid #f7f4f3;
     background: #fff;
-}
-
-.lessons-list__lessons {
 }
 
 .lessons-list__lesson {
@@ -316,4 +310,16 @@ code {
 
 .box + .box {
     margin-left: 1rem;
+}
+
+.tutorial-header {
+    border-bottom: #c2c2c2 1px solid;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tutorial-footer {
+    border-top: #c2c2c2 1px solid;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }

@@ -1,0 +1,45 @@
+.avoid-loss-data-container {
+    height: 170px;
+    width: 300px;
+    border: 1px solid #414547;
+    padding: 0.8rem;
+}
+
+.overflow-word {
+    border: 1px solid #414547;
+    width: 100px;
+    font-size: 250%;
+}
+
+.oveflow-small-box {
+    border: 0.0625rem solid #414547;
+    width: 12.5rem;
+    min-width: 12.5rem;
+    height: 6.25rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.flex-row .oveflow-small-box+.oveflow-small-box {
+    margin-left: 10px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-scroll-y {
+    overflow-y: scroll;
+}
+
+.overflow-scroll-x {
+    overflow-x: scroll;
+}
+
+.overflow-scroll-x-auto {
+    overflow-x: auto;
+}
