@@ -3,51 +3,38 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
 } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home/Home';
+import MainContainer from './components/MainContainer/MainContainer';
+import BackgroundAndBorders from './components/Pages/BackgroundAndBorders/BackgroundAndBorders';
+import BoxModel from './components/Pages/BoxModel/BoxModel';
+import CSSValuesAndUnits from './components/Pages/CSSValuesAndUnits/CSSValuesAndUnits';
+import Home from './components/Pages/Home/Home';
+import OverflowingContent from './components/Pages/OverflowingContent/OverflowingContent';
+import Selectors from './components/Pages/Selectors/Selectors';
+import TextDirections from './components/Pages/TextDirections/TextDirections';
+import * as urls from './urls';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
+    <MainContainer>
+      <Router>
+        <div>
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-
-        <footer>
-          <p>Hello from footer</p>
-        </footer>
-      </div>
-    </Router>
+          <Routes>
+            <Route path={urls.SelectorsUrl} element={<Selectors />} />
+            <Route path={urls.BoxModelUrl} element={<BoxModel />} />
+            <Route path={urls.BackgroundAndBordersUrl} element={<BackgroundAndBorders />} />
+            <Route path={urls.TextDirectionsUrl} element={<TextDirections />} />
+            <Route path={urls.OverflowingContentUrl} element={<OverflowingContent />} />
+            <Route path={urls.CSSValuesAndUnitsUrl} element={<CSSValuesAndUnits />} />
+            <Route path={urls.HomeUrl} element={<Home />} />
+          </Routes>
+        </div>
+      </Router>
+    </MainContainer>
   );
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 export default App;
