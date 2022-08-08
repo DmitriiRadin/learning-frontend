@@ -4,8 +4,14 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -21,7 +27,12 @@ This is
 a multi-line
 comment
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
 
@@ -41,8 +52,14 @@ p {
     line-height: 22px;
 }
 
-ol, ul {
+ol,
+ul {
     font-size: 15px;
+}
+
+ol ol,
+ul ul {
+    font-size: inherit;
 }
 
 hr {
@@ -98,12 +115,14 @@ a {
     border-bottom: 1px solid #f7f4f3;
 }
 
-.lessons-list__link:link, .lessons-list__link:visited {
+.lessons-list__link:link,
+.lessons-list__link:visited {
     text-decoration: none;
     color: #436ebd;
 }
 
-.lessons-list__link:hover, .lessons-list__link:active {
+.lessons-list__link:hover,
+.lessons-list__link:active {
     text-decoration: underline;
     color: #e37cf1;
 }
@@ -137,7 +156,8 @@ a {
     float: left;
 }
 
-.col-by-2, .col-5 {
+.col-by-2,
+.col-5 {
     width: 49.99%;
     float: left;
 }
@@ -162,7 +182,8 @@ a {
     float: left;
 }
 
-.col-by-5, .col-2 {
+.col-by-5,
+.col-2 {
     width: 20%;
     float: left;
 }
@@ -218,16 +239,16 @@ a {
 }
 
 
-:is(h1,h2) > a:only-child {
+:is(h1, h2)>a:only-child {
     text-decoration: none;
     color: black;
 }
 
-:is(h1,h2) > a:only-child:hover {
+:is(h1, h2)>a:only-child:hover {
     text-decoration: underline;
 }
 
-:is(h1,h2) > a:only-child:hover::after {
+:is(h1, h2)>a:only-child:hover::after {
     margin-left: 10px;
     content: "#";
     font-size: 90%;
@@ -244,7 +265,8 @@ table th {
     line-height: 1.5;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 0.5rem 0.75rem;
     vertical-align: middle;
     border: #c2c2c2 1px solid;
@@ -255,7 +277,7 @@ table th, table td {
     background: #f2f1f1;
 }
 
-h1 + p {
+h1+p {
     font-size: 105%;
 }
 
@@ -292,14 +314,18 @@ code {
     margin-bottom: 1.5rem;
 }
 
-.tutorial-try > header {
+.tutorial-try>header {
     border-bottom: 1px solid #d5d5d5;
     margin: 0 -1.5rem 2rem;
     padding: 0 1.5rem;
 }
 
-.tutorial-try > header > h2 {
+.tutorial-try>header>h2 {
     margin: 1rem 0;
+}
+
+.tutorial-body {
+    overflow-x: auto;
 }
 
 .box {
@@ -308,7 +334,7 @@ code {
     border-radius: 0.2rem;
 }
 
-.box + .box {
+.box+.box {
     margin-left: 1rem;
 }
 
