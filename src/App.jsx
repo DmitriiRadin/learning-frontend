@@ -6,6 +6,7 @@ import {
   Link,
 } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -32,13 +33,13 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/" element={<Home />} />
         </Routes>
+
+        <footer>
+          <p>Hello from footer</p>
+        </footer>
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
 }
 
 function About() {

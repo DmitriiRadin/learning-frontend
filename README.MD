@@ -15,3 +15,9 @@ npm start
   npm run eject
     Removes this tool and copies build dependencies, configuration files
     and scripts into the app directory. If you do this, you can’t go back!
+
+
+Techologies
+
+react-router-dom - https://reactrouter.com/docs/en/v6/getting-started/installation
+eslint - https://eslint.org/docs/latest/user-guide/getting-started
