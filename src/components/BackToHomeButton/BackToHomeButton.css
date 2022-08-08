@@ -1,0 +1,16 @@
+.BackToHomeButton {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: dodgerblue;
+    display: inline-block;
+    text-decoration: underliner;
+    background-color: white;
+    border: #d5d5d5 1px solid;
+    border-radius: 5px;
+}
+
+.BackToHomeButton:hover {
+    background-color: #d5d5d5;
+    text-decoration: none;
+}

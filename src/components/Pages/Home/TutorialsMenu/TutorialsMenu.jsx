@@ -1,5 +1,5 @@
 import React from 'react';
-import './LessonList.css';
+import './TutorialsMenu.css';
 
 function TutorialsMenu(props) {
   const { children } = props;

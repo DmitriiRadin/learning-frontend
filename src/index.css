@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -21,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h1 {
@@ -62,8 +64,36 @@ hr {
   overflow: visible;
 }
 
-code {
-  background-color: #eee;
-  color: orangered;
-  padding: 0 0.25rem;
+
+:is(h1, h2)>a:only-child {
+  text-decoration: none;
+  color: black;
+}
+
+:is(h1, h2)>a:only-child:hover {
+  text-decoration: underline;
+}
+
+:is(h1, h2)>a:only-child:hover::after {
+  margin-left: 10px;
+  content: "#";
+  font-size: 90%;
+  color: #606060;
+}
+
+table {
+  border: #c2c2c2 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  line-height: 1.5;
+}
+
+table th,
+table td {
+  padding: 0.5rem 0.75rem;
+  vertical-align: middle;
+  border: #c2c2c2 1px solid;
 }

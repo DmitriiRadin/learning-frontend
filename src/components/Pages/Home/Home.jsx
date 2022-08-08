@@ -1,7 +1,7 @@
 import React from 'react';
 import * as urls from '../../../urls';
 import './Home.css';
-import { TutorialsMenu, TutorialsMenuItem } from './LessonList/LessonList';
+import { TutorialsMenu, TutorialsMenuItem } from './TutorialsMenu/TutorialsMenu';
 
 function Home() {
   return (
