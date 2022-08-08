@@ -1,16 +1,16 @@
 import React from 'react';
 import './LessonList.css';
 
-function LessonList(props) {
+function TutorialsMenu(props) {
   const { children } = props;
 
-  return <ol className="LessonList">{children}</ol>;
+  return <ol className="TutorialsMenu">{children}</ol>;
 }
 
-function LessonListItem(props) {
+function TutorialsMenuItem(props) {
   const { href, children } = props;
   return (
-    <li className="LessonListItem">
+    <li className="TutorialsMenuItem">
       <a href={href}>
         {children}
       </a>
@@ -18,4 +18,4 @@ function LessonListItem(props) {
   );
 }
 
-export { LessonList, LessonListItem };
+export { TutorialsMenu, TutorialsMenuItem };

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as urls from '../../../urls';
 import './Home.css';
-import { LessonList, LessonListItem } from './LessonList/LessonList';
+import { TutorialsMenu, TutorialsMenuItem } from './LessonList/LessonList';
 
 function Home() {
   return (
@@ -13,18 +13,26 @@ function Home() {
         <div className="content">
           <p>Lets learn the fundamentals of CSS.</p>
 
-          <LessonList>
-            <LessonListItem href={urls.SelectorsUrl}>Selectors</LessonListItem>
-            <LessonListItem href={urls.BoxModelUrl}>Box model</LessonListItem>
-            <LessonListItem href={urls.BackgroundAndBordersUrl}>
+          <TutorialsMenu>
+            <TutorialsMenuItem href={urls.SelectorsUrl}>
+              Selectors
+            </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.BoxModelUrl}>
+              Box model
+            </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.BackgroundAndBordersUrl}>
               Backgrounds and borders
-            </LessonListItem>
-            <LessonListItem href={urls.TextDirectionsUrl}>
+            </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.TextDirectionsUrl}>
               Handling different text directions
-            </LessonListItem>
-            <LessonListItem href={urls.OverflowingContentUrl}>Overflowing content</LessonListItem>
-            <LessonListItem href={urls.CSSValuesAndUnitsUrl}>CSS values and units</LessonListItem>
-          </LessonList>
+            </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.OverflowingContentUrl}>
+              Overflowing content
+            </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.CSSValuesAndUnitsUrl}>
+              CSS values and units
+            </TutorialsMenuItem>
+          </TutorialsMenu>
         </div>
       </div>
     </div>
