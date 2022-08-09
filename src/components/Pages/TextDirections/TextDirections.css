@@ -1,0 +1,14 @@
+.vertical {
+    writing-mode: vertical-rl;
+}
+
+.horizontal {
+    writing-mode: horizontal-tb;
+}
+
+.logical-properties-and-values .box {
+    inline-size: 13rem;
+    block-size: 18rem;
+    margin-inline-start: 2rem;
+    border-block-end: 3px double #e37cf1;
+}
