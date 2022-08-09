@@ -23,11 +23,11 @@
 }
 
 .background-images .balloon-background {
-    background: #77d9fd url('/images/icons8-party-balloon-80.png');
+    background: #77d9fd url('/public/images/icons8-party-balloon-80.png');
 }
 
 .background-images .star-background {
-    background: #e5a4ee url('/images/icons8-star-96.png');
+    background: #e5a4ee url('/public/images/icons8-star-96.png');
 }
 
 .background-images :is(.star-background, .balloon-background) {
@@ -60,5 +60,5 @@
 }
 
 .background-images .multiple-images-background {
-    background: url("/images/icons8-star-96.png") 1rem 1rem / 7rem no-repeat, url("/images/icons8-party-balloon-80.png") 3rem 4rem repeat-x, #e37cf1;
+    background: url("/public/images/icons8-star-96.png") 1rem 1rem / 7rem no-repeat, url("/public/images/icons8-party-balloon-80.png") 3rem 4rem repeat-x, #e37cf1;
 }
