@@ -1,0 +1,82 @@
+.exampleBox {
+    border: 1px #123456 solid;
+    border-radius: 3px;
+    padding: 0.7rem;
+}
+
+.exampleBox+.exampleBox {
+    margin-top: 0.7rem;
+}
+
+.darkblueBorder {
+    border: 5px solid darkblue;
+}
+
+.extrinsicBox {
+    height: 150px;
+    width: 200px;
+    font-size: 1.15rem;
+}
+
+.extrinsicBox+.extrinsicBox {
+    margin-left: 0.7rem;
+}
+
+.percentageBox {
+    width: 50%;
+}
+
+.marginPaddingBox {
+    margin: 10%;
+    padding: 10%;
+}
+
+.minHeightBox {
+    min-height: 50px;
+    border: 5px solid darkblue;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.preview {
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #4d4e53;
+    border-radius: 2px;
+    padding: 10px 14px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrapper > * {
+    margin-right: 10px;
+}
+
+.imageBox {
+    width: 200px;
+    border: 5px solid darkblue;
+}
+
+.imageMinibox {
+    width: 50px;
+    border: 5px solid darkblue;
+}
+
+.imageWidth {
+    width: 100%;
+}
+
+.imageMaxWidth {
+    max-width: 100%;
+}
+
+.viewportBox {
+    border: 5px solid darkblue;
+    width: 20vw;
+    height: 20vh;
+    font-size: 10vh;
+}

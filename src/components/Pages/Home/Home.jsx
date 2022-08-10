@@ -32,6 +32,9 @@ function Home() {
             <TutorialsMenuItem href={urls.CSSValuesAndUnitsUrl}>
               CSS values and units
             </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.SizingItemsInCSSUrl}>
+              Sizing items in CSS
+            </TutorialsMenuItem>
           </TutorialsMenu>
         </div>
       </div>
