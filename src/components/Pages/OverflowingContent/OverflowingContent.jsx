@@ -26,7 +26,7 @@ function OverflowingContent() {
       <div className="tutorial-try">
         <header>
           <h2>
-            CSS tries to avoid &qout;data loss&qout;
+            CSS tries to avoid &qout;data loss&qoSut;
           </h2>
         </header>
 
