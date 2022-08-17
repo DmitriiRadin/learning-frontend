@@ -5,3 +5,5 @@ export const BackgroundAndBordersUrl = '/BackgroundAndBorders';
 export const TextDirectionsUrl = '/TextDirections';
 export const OverflowingContentUrl = '/OverflowingContent';
 export const CSSValuesAndUnitsUrl = '/CSSValuesAndUnits';
+export const SizingItemsInCSSUrl = '/SizingItemsInCSS';
+export const ImagesMediaAndFormElementsUrl = '/ImagesMediaAndFormElements';

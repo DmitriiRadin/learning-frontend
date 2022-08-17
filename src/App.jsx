@@ -10,8 +10,10 @@ import BackgroundAndBorders from './components/Pages/BackgroundAndBorders/Backgr
 import BoxModel from './components/Pages/BoxModel/BoxModel';
 import CSSValuesAndUnits from './components/Pages/CSSValuesAndUnits/CSSValuesAndUnits';
 import Home from './components/Pages/Home/Home';
+import ImagesMediaAndFormElements from './components/Pages/ImagesMediaAndFormElements/ImagesMediaAndFormElements';
 import OverflowingContent from './components/Pages/OverflowingContent/OverflowingContent';
 import Selectors from './components/Pages/Selectors/Selectors';
+import SizingItemsInCSS from './components/Pages/SizingItemsInCSS/SizingItemsInCSS';
 import TextDirections from './components/Pages/TextDirections/TextDirections';
 import * as urls from './urls';
 
@@ -29,6 +31,11 @@ function App() {
             <Route path={urls.TextDirectionsUrl} element={<TextDirections />} />
             <Route path={urls.OverflowingContentUrl} element={<OverflowingContent />} />
             <Route path={urls.CSSValuesAndUnitsUrl} element={<CSSValuesAndUnits />} />
+            <Route path={urls.SizingItemsInCSSUrl} element={<SizingItemsInCSS />} />
+            <Route
+              path={urls.ImagesMediaAndFormElementsUrl}
+              element={<ImagesMediaAndFormElements />}
+            />
             <Route path={urls.HomeUrl} element={<Home />} />
           </Routes>
         </div>
