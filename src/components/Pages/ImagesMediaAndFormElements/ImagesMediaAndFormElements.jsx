@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { Preview, TutorialTask, TutorialTemplate } from '../../TutorialComponents/TutorialComponents';
 import styles from './ImagesMediaAndFormElements.module.css';
 
 function ImagesMediaAndFormElements() {
+  const id = useId();
+
   return (
     <TutorialTemplate
       title="Images, media, and form elements"
@@ -47,6 +49,43 @@ function ImagesMediaAndFormElements() {
               className={styles.cover}
             />
           </div>
+        </Preview>
+      </TutorialTask>
+
+      <TutorialTask title="Replaced elements in layout">
+        <Preview>
+          <div className={styles.replacedElementsInLayout}>
+            <img src={`${process.env.PUBLIC_URL}/images/balloons.jpg`} alt="ballon" />
+            <div />
+            <div />
+            <div />
+          </div>
+        </Preview>
+      </TutorialTask>
+
+      <TutorialTask title="Form elements">
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/Forms"
+        >
+          Creating and styling web forms advanced guides
+        </a>
+
+        <Preview>
+          <form className={styles.formElements}>
+            <div>
+              <label htmlFor={`${id}-name`}>Name</label>
+            </div>
+            <input type="text" id={`${id}-name`} />
+            <div>
+              <label htmlFor={`${id}-email`}>Email</label>
+            </div>
+            <input type="email" id={`${id}-email`} />
+
+            <div className="buttons">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+
         </Preview>
       </TutorialTask>
     </TutorialTemplate>
