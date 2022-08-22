@@ -38,6 +38,9 @@ function Home() {
             <TutorialsMenuItem href={urls.ImagesMediaAndFormElementsUrl}>
               Images, media, and form elements
             </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.StylingTables}>
+              Styling tables
+            </TutorialsMenuItem>
           </TutorialsMenu>
         </div>
       </div>

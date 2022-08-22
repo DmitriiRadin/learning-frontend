@@ -14,6 +14,7 @@ import ImagesMediaAndFormElements from './components/Pages/ImagesMediaAndFormEle
 import OverflowingContent from './components/Pages/OverflowingContent/OverflowingContent';
 import Selectors from './components/Pages/Selectors/Selectors';
 import SizingItemsInCSS from './components/Pages/SizingItemsInCSS/SizingItemsInCSS';
+import StylingTables from './components/Pages/StylingTables/StylingTables';
 import TextDirections from './components/Pages/TextDirections/TextDirections';
 import * as urls from './urls';
 
@@ -32,6 +33,7 @@ function App() {
             <Route path={urls.OverflowingContentUrl} element={<OverflowingContent />} />
             <Route path={urls.CSSValuesAndUnitsUrl} element={<CSSValuesAndUnits />} />
             <Route path={urls.SizingItemsInCSSUrl} element={<SizingItemsInCSS />} />
+            <Route path={urls.StylingTables} element={<StylingTables></StylingTables>}></Route>
             <Route
               path={urls.ImagesMediaAndFormElementsUrl}
               element={<ImagesMediaAndFormElements />}

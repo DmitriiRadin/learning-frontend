@@ -9,9 +9,11 @@ function TutorialTemplate({ title, children, tutorialReference }) {
         <BackToHomeButton />
         <h1>{title}</h1>
       </header>
+      <hr />
       <div>
         {children}
       </div>
+      <hr />
       <footer>
         <p><a href={tutorialReference}>Read on MDN</a></p>
       </footer>

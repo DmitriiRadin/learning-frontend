@@ -1,0 +1,79 @@
+.StylingTables table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+}
+
+.StylingTables thead th:nth-child(1) {
+    width: 30%;
+}
+
+.StylingTables thead th:nth-child(2) {
+    width: 20%;
+}
+
+.StylingTables thead th:nth-child(3) {
+    width: 15%;
+}
+
+.StylingTables thead th:nth-child(4) {
+    width: 35%;
+}
+
+.StylingTables th,
+.StylingTables td {
+    padding: 20px;
+}
+
+.StylingTables th {
+    letter-spacing: 2px;
+}
+
+.StylingTables td {
+    letter-spacing: 1px;
+}
+
+.StylingTables tbody td {
+    text-align: center;
+}
+
+.StylingTables tfoot th  {
+    text-align: right;
+}
+
+.StylingTables thead,
+.StylingTables tfoot {
+    background: url("/public/images/icons8-star-96.png");
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.StylingTables thead th, 
+.StylingTables tfoot th,
+.StylingTables tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid purple;
+}
+
+.StylingTables tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+
+.StylingTables tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}
+
+.StylingTables table {
+    background-color: #ff33cc;
+}
+
+.StylingTables caption {
+    font-family: cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+}
