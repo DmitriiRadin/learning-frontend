@@ -8,3 +8,4 @@ export const CSSValuesAndUnitsUrl = '/CSSValuesAndUnits';
 export const SizingItemsInCSSUrl = '/SizingItemsInCSS';
 export const ImagesMediaAndFormElementsUrl = '/ImagesMediaAndFormElements';
 export const StylingTables = '/StylingTables';
+export const CSSLayoutsUrl = '/CSSLayouts';

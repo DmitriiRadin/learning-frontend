@@ -41,6 +41,9 @@ function Home() {
             <TutorialsMenuItem href={urls.StylingTables}>
               Styling tables
             </TutorialsMenuItem>
+            <TutorialsMenuItem href={urls.CSSLayoutsUrl}>
+              CSS Layouts
+            </TutorialsMenuItem>
           </TutorialsMenu>
         </div>
       </div>

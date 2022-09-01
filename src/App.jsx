@@ -5,6 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import './App.css';
+import CSSLayouts from './components/CSSLayouts/CSSLayouts';
 import MainContainer from './components/MainContainer/MainContainer';
 import BackgroundAndBorders from './components/Pages/BackgroundAndBorders/BackgroundAndBorders';
 import BoxModel from './components/Pages/BoxModel/BoxModel';
@@ -34,6 +35,7 @@ function App() {
             <Route path={urls.CSSValuesAndUnitsUrl} element={<CSSValuesAndUnits />} />
             <Route path={urls.SizingItemsInCSSUrl} element={<SizingItemsInCSS />} />
             <Route path={urls.StylingTables} element={<StylingTables></StylingTables>}></Route>
+            <Route path={urls.CSSLayoutsUrl} element={<CSSLayouts></CSSLayouts>}></Route>
             <Route
               path={urls.ImagesMediaAndFormElementsUrl}
               element={<ImagesMediaAndFormElements />}
